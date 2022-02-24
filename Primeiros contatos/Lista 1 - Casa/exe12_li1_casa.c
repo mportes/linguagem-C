@@ -3,13 +3,13 @@
 
 int main()
 {
-	float D, T, V;
+	float d, t, v;
 	printf("Digite a distancia percorrida em metros: ");
-	scanf("%f", &D);
+	scanf("%f", &d);
 	printf("Digite o tempo em segundos: ");
-	scanf("%f", &T);
-	V=D/T;
-	printf("A velocidade media e igual a: %f\n", V);
+	scanf("%f", &t);
+	v=d/t;
+	printf("A velocidade media e igual a: %f\n", v);
 	getch();
 	return 0;
 }
