@@ -4,39 +4,39 @@
 
 int main() {
 	setlocale(LC_ALL, "Portuguese");
-	int A, B, C;
+	int a, b, c;
 	
-	printf("Digite os números para descobrir qual é o maior, qual é o menor e qual é o \"do meio\": ");
-	scanf("%d %d %d", &A, &B, &C);
+	printf("Digite os nÃºmeros para descobrir qual Ã© o maior, qual Ã© o menor e qual Ã© o \"do meio\": ");
+	scanf("%d %d %d", &a, &b, &c);
 	
-	if((A>C) && (C>B)) {
-		printf("O maior: %d\n", A);
-		printf("O menor: %d\n", B);
-		printf("O \"do meio\": %d\n", C);
+	if((a>c) && (c>b)) {
+		printf("O maior: %d\n", a);
+		printf("O menor: %d\n", b);
+		printf("O \"do meio\": %d\n", c);
 	} else {
-		if((A>B) && (B>C)) {
-			printf("O maior: %d\n", A);
-			printf("O menor: %d\n", C);
-			printf("O \"do meio\": %d\n", B);
+		if((a>b) && (b>c)) {
+			printf("O maior: %d\n", a);
+			printf("O menor: %d\n", c);
+			printf("O \"do meio\": %d\n", c);
 		} else {
-			if((B>C) && (C>A)) {
-				printf("O maior: %d\n", B);
-				printf("O menor: %d\n", A);
-				printf("O \"do meio\": %d\n", C);
+			if((b>c) && (c>a)) {
+				printf("O maior: %d\n", b);
+				printf("O menor: %d\n", a);
+				printf("O \"do meio\": %d\n", c);
 			} else {
-				if((B>A) && (A>C)) {
-					printf("O maior: %d\n", B);
-					printf("O menor: %d\n", C);
-					printf("O \"do meio\": %d\n", A);
+				if((b>a) && (a>c)) {
+					printf("O maior: %d\n", b);
+					printf("O menor: %d\n", c);
+					printf("O \"do meio\": %d\n", a);
 				} else {
-					if((C>B) && (B>A)) {
-						printf("O maior: %d\n", C);
-						printf("O menor: %d\n", A);
-						printf("O \"do meio\": %d\n", B);
+					if((c>b) && (b>a)) {
+						printf("O maior: %d\n", c);
+						printf("O menor: %d\n", a);
+						printf("O \"do meio\": %d\n", b);
 					} else {
-						printf("O maior: %d\n", C);
-						printf("O menor: %d\n", B);
-						printf("O \"do meio\": %d\n", A);
+						printf("O maior: %d\n", c);
+						printf("O menor: %d\n", b);
+						printf("O \"do meio\": %d\n", a);
 					}
 				}
 			}
