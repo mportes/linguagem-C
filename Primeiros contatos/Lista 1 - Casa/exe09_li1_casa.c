@@ -3,15 +3,15 @@
 
 int main()
 {
-	float P1, P2, A, M;
+	float p1, p2, a, m;
 	printf("Insira a nota da primeira avaliacao: ");
-	scanf("%f", &P1)/
+	scanf("%f", &p1)/
 	printf("Insira a nota da segunda avaliacao: ");
-	scanf("%f", &P2);
+	scanf("%f", &p2);
 	printf("Insira a nota das atividades: ");
-	scanf("%f", &A);
-	M=(P1*4+P2*4+A*2)/10;
-	printf("A media do aluno e igual a: %f\n", M);
+	scanf("%f", &a);
+	m=(p1*4+p2*4+a*2)/10;
+	printf("A media do aluno e igual a: %f\n", m);
 	getch();
 	return 0;
 }
