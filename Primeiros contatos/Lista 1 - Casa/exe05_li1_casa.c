@@ -3,13 +3,13 @@
 
 int main()
 {
-	float M, H, I;
+	float m, h, i;
 	printf("Insira a sua massa em kg: ");
-	scanf("%f", &M);
+	scanf("%f", &m);
 	printf("Insira a sua altura em metros: ");
-	scanf("%f", &H);
-	I=M/(H*H);
-	printf("O seu Indice de Massa Corporal (IMC) e igual a %f\n", I);
+	scanf("%f", &h);
+	i=m/(h*h);
+	printf("O seu Indice de Massa Corporal (IMC) e igual a %f\n", i);
 	getch();
 	return 0;
 }
