@@ -4,13 +4,13 @@
 
 int main() {
 	setlocale(LC_ALL, "Portuguese");
-	int A;
+	int a;
 	
-	printf("Digite o número a ser avaliado como par ou ímpar: ");
-	scanf("%d", &A);
+	printf("Digite o nÃºmero a ser avaliado como par ou Ã­mpar: ");
+	scanf("%d", &a);
 	
-	if(A%2==0) printf("O número %d é par!", A);
-	else printf("O número %d é ímpar!", A);
+	if(a%2==0) printf("O nÃºmero %d Ã© par!", a);
+	else printf("O nÃºmero %d Ã© Ã­mpar!", a);
 	
 	return 0;
 }
