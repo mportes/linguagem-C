@@ -8,7 +8,7 @@ int main()
 	v0=2;
 	a=10;
 	printf("Insira o tempo em segundos: ");
-	scanf("%f", &T);
+	scanf("%f", &t);
 	s=(s0+v0)*t+((1/2)*a*(t*t));
 	printf("O valor do movimento uniforme variado e igual a: %f\n", s);
 	getch();
