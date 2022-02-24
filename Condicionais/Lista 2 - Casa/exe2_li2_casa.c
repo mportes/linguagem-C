@@ -4,22 +4,22 @@
 
 int main() {
 	setlocale(LC_ALL, "Portuguese");
-	int A, D, N;
+	int a, d, n;
 	
-	printf("Digite um valor entre 0 e 100 para que obtenha a diferença entre este e o número chave: ");
-	scanf("%d", &A);
+	printf("Digite um valor entre 0 e 100 para que obtenha a diferenÃ§a entre este e o nÃºmero chave: ");
+	scanf("%d", &a);
 	
-	if((A>=0) && (A<=100)) {
-		N=15;
+	if((a>=0) && (a<=100)) {
+		n=15;
 		
-		if(A>N) {
-			D=A-N;
+		if(a>n) {
+			d=a-n;
 		} else {
-			D=N-A;
+			d=n-a;
 		}
 		
-		printf("A diferença entre o número digitado e o número chave é igual a %d", D);
-	} else printf("O número é inválido!");
+		printf("A diferenÃ§a entre o nÃºmero digitado e o nÃºmero chave Ã© igual a %d", d);
+	} else printf("O nÃºmero Ã© invÃ¡lido!");
 	
 	return 0;
 }
