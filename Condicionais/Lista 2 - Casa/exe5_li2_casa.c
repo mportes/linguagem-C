@@ -4,27 +4,26 @@
 
 int main() {
 	setlocale(LC_ALL, "Portuguese");
-	float Sala, Salfi, Salin, H, A;
+	float sala, salfi, salin, h, a;
 	
-	printf("Digite o sal·rio bruto e, em seguida, as horas trabalhadas: ");
-	scanf("%f %f", &Salin, &H);
+	printf("Digite o sal√°rio bruto e, em seguida, as horas trabalhadas: ");
+	scanf("%f %f", &salin, &h);
 	
-	if((Salin>0) && (Salin<800)) Salfi=Salin;
+	if((salin>0) && (salin<800)) salfi=salin;
 	else {
-		if((Salin>=800) && (Salin<=1600)) Salfi= Salin-(13*(Salin/100));
+		if((salin>=800) && (salin<=1600)) salfi=salin-(13*(salin/100));
 		else {
-			if(Salin>1600)
-			Salfi= Salin-(22*(Salin/100));
+			if(salin>1600)
+			salfi=salin-(22*(salin/100));
 		}
 	}
 	
-	if(H>160) {
-		A=(Salin/160)*0.5*(H-160);
-		Sala=Salfi+A;
-	} else Sala=Salfi;
+	if(h>160) {
+		a=(salin/160)*0.5*(h-160);
+		sala=salfi+a;
+	} else sala=salfi;
 	
-	printf("O sal·rio lÌquido È igual a %.2f", Sala);
+	printf("O sal√°rio l√≠quido √© igual a %.2f", sala);
 	
 	return 0;
 }
-
