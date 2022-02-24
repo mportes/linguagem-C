@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-int main()
-{
+int main() {
 	float s, t, s0, v0, a;
 	s0=2;
 	v0=2;
