@@ -4,21 +4,21 @@
 
 int main() {
 	setlocale(LC_ALL, "Portuguese");
-	float N;
-	int  NM, X, A;
+	float n;
+	int  nm, x, a;
 	
-	printf("Digite o número a ser arredondado: ");
-	scanf("%f", &N);
+	printf("Digite o nÃºmero a ser arredondado: ");
+	scanf("%f", &n);
 	
-	NM=N*100;
-	X=(NM % 100);
+	nm=n*100;
+	x=(nm % 100);
 	
-	if(X>=60) {
-		A=(N-(X/100))+1;
+	if(x>=60) {
+		a=(n-(x/100))+1;
 	} else {
-		A=(N-(X/100));
+		a=(n-(x/100));
 	}
 	
-	printf("O valor arredondado é igual a %d\n", A);
+	printf("O valor arredondado Ã© igual a %d\n", a);
 	return 0;
 }
