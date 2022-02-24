@@ -3,14 +3,14 @@
 
 int main()
 {
-	float A, Ar, B, P;
+	float a, ar, b, p;
 	printf("Insira o valor da altura do retangulo: ");
-	scanf("%f", &A);
+	scanf("%f", &a);
 	printf("Insira o valor da base do retangulo: ");
-	scanf("%f", &B);
-	Ar=A*B;
-	P=(2*A)+(2*B);
-	printf("A area do retangulo e igual a %f e o perimetro do retangulo e igual a %f\n", Ar, P);
+	scanf("%f", &b);
+	ar=a*b;
+	p=(2*a)+(2*b);
+	printf("A area do retangulo e igual a %f e o perimetro do retangulo e igual a %f\n", ar, p);
 	getch();
 	return 0;
 }
