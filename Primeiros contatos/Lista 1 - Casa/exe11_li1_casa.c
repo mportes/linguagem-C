@@ -3,15 +3,15 @@
 
 int main()
 {
-	int A, B;
+	int a, b;
 	printf("Insira o primeiro numero: ");
-	scanf("%i", &A);
+	scanf("%i", &a);
 	printf("Insira o segundo numero: ");
-	scanf("%i", &B);
-	A=A+B;
-	B=A-B;
-	A=A-B;
-	printf("Os numeros trocados sao, respectivamente, %i e %i\n", A, B);
+	scanf("%i", &b);
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	printf("Os numeros trocados sao, respectivamente, %i e %i\n", a, b);
 	getch();
 	return 0;
 }
