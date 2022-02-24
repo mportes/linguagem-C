@@ -4,12 +4,12 @@
 
 int main()
 {
-	float R, A, C;
+	float r, a, c;
 	printf("Insira o valor do raio da circunferencia: ");
-	scanf("%f", &R);
-	A=M_PI*(R*R);
-	C=2*M_PI*R;
-	printf("O valor da area da circunferencia e %f e o do valor do comprimento e igual a %f\n", A, C);
+	scanf("%f", &r);
+	a=M_PI*(r*r);
+	c=2*M_PI*r;
+	printf("O valor da area da circunferencia e %f e o do valor do comprimento e igual a %f\n", a, c);
 	getch();
 	return 0;
 }
