@@ -3,14 +3,14 @@
 
 int main()
 {
-	float S, T, S0, V0, A;
-	S0=2;
-	V0=2;
-	A=10;
+	float s, t, s0, v0, a;
+	s0=2;
+	v0=2;
+	a=10;
 	printf("Insira o tempo em segundos: ");
 	scanf("%f", &T);
-	S=(S0+V0)*T+((1/2)*A*(T*T));
-	printf("O valor do movimento uniforme variado e igual a: %f\n", S);
+	s=(s0+v0)*t+((1/2)*a*(t*t));
+	printf("O valor do movimento uniforme variado e igual a: %f\n", s);
 	getch();
 	return 0;
 }
