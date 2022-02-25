@@ -3,14 +3,14 @@
 
 int main()
 {
-	float D, T, V, LU;
+	float d, t, v, lu;
 	printf("Escreva o tempo em segundos: ");
-	scanf("%f", &T);
+	scanf("%f", &t);
 	printf("Escreva a velocidade em metros por segundo: ");
-	scanf("%f", &V);
-	D=T*V;
-	LU=D/12;
-	printf("Os valores de tempo, velocidade media, distancia e litros usados sao, respectivamente: %f %f %f %f\n", T, D, V, LU);
+	scanf("%f", &v);
+	d=t*v;
+	lu=d/12;
+	printf("Os valores de tempo, velocidade media, distancia e litros usados sao, respectivamente: %f %f %f %f\n", t, d, v, lu);
 	getch();
 	return 0;
 }
