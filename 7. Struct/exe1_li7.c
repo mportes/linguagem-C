@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 #include<locale.h>
 #include<string.h>
 
@@ -16,7 +17,7 @@ int main() {
 	a=0;
 	while(a<6) {
 		printf("----------------------------------------------------------------\n");
-		printf("Selecione a opção desejada:\n1. Cadastro e registros\n2. Pesquisa de registro\n3. Classificação alfabética\n4. Alteração de registro\n5. Sair\n\nSua escolha: ");
+		printf("Selecione a opÃ§Ã£o desejada:\n1. Cadastro e registros\n2. Pesquisa de registro\n3. ClassificaÃ§Ã£o alfabÃ©tica\n4. AlteraÃ§Ã£o de registro\n5. Sair\n\nSua escolha: ");
 		scanf("%i", &a);
 		printf("----------------------------------------------------------------\n");
 		
@@ -27,7 +28,7 @@ int main() {
 					fflush(stdin); 
 					fgets(c[i].n, 100, stdin);
 					
-					printf("Endereço: "); 
+					printf("EndereÃ§o: "); 
 					fflush(stdin); 
 					fgets(c[i].end, 200, stdin);
 					
@@ -51,20 +52,20 @@ int main() {
 				
 				for(i=0;i<5;++i) {
 					if(strcmp(p, c[i].n)==0) {
-						printf("Nome encontrado no registro %d\n\nDados:\nNome: %sEndereço: %sIdade: %d\nTelefone: %s\n", i, c[i].n, c[i].end, c[i].id, c[i].tel); 
+						printf("Nome encontrado no registro %d\n\nDados:\nNome: %sEndereÃ§o: %sIdade: %d\nTelefone: %s\n", i, c[i].n, c[i].end, c[i].id, c[i].tel); 
 						printf("----------------------------------------------------------------\n");
 						flag=1;
 					}
 				}
 				
 				if(flag==0) {
-					printf("Nome não encontrado nos registros :(\n"); 
+					printf("Nome nÃ£o encontrado nos registros :(\n"); 
 					printf("----------------------------------------------------------------\n");
 				}
 			break;
 			
 			case 3:
-				printf("Ordenação: \n\n");
+				printf("OrdenaÃ§Ã£o: \n\n");
 				
 				for(i=0;i<4;++i) {
 					for(j=i+1;j<5;++j) {
@@ -94,7 +95,7 @@ int main() {
 				}
 				
 				if(flag==1) {
-					printf("Nome encontrado no registro %d\n\nDados\nNome: %sEndereço: %sIdade: %d\nTelefone: %s\n\nEntre com o dado que deseja alterar:\n1. Nome\n2. Endereço\n3. Idade\n4. Telefone\n\nSua escolha: ", i, c[i].n, c[i].end, c[i].id, c[i].tel);
+					printf("Nome encontrado no registro %d\n\nDados\nNome: %sEndereÃ§o: %sIdade: %d\nTelefone: %s\n\nEntre com o dado que deseja alterar:\n1. Nome\n2. EndereÃ§o\n3. Idade\n4. Telefone\n\nSua escolha: ", i, c[i].n, c[i].end, c[i].id, c[i].tel);
 					scanf("%d", &r);
 					
 					switch(r) {
@@ -103,16 +104,16 @@ int main() {
 							printf("Novo nome: "); 
 							fflush(stdin); 
 							fgets(c[i].n, 100, stdin); 
-							printf("Alteração efetuada com sucesso!\a\n"); 
+							printf("AlteraÃ§Ã£o efetuada com sucesso!\a\n"); 
 							printf("----------------------------------------------------------------\n");
 						break;
 						
 						case 2:	
 							printf("----------------------------------------------------------------\n");
-							printf("Novo endereço: "); 
+							printf("Novo endereÃ§o: "); 
 							fflush(stdin); 
 							fgets(c[i].end, 200, stdin); 
-							printf("Alteração efetuada com sucesso!\a\n"); 
+							printf("AlteraÃ§Ã£o efetuada com sucesso!\a\n"); 
 							printf("----------------------------------------------------------------\n");
 						break;	
 						
@@ -121,7 +122,7 @@ int main() {
 							printf("Nova idade: "); 
 							fflush(stdin); 
 							scanf("%d", &c[i].id); 
-							printf("Alteração efetuada com sucesso!\a\n"); 
+							printf("AlteraÃ§Ã£o efetuada com sucesso!\a\n"); 
 							printf("----------------------------------------------------------------\n");
 						break;	
 						
@@ -130,13 +131,13 @@ int main() {
 							printf("Novo telefone: "); 
 							fflush(stdin); 
 							fgets(c[i].tel, 20, stdin); 
-							printf("Alteração efetuada com sucesso!\a\n"); 
+							printf("AlteraÃ§Ã£o efetuada com sucesso!\a\n"); 
 							printf("----------------------------------------------------------------\n");
 						break;
 						
-						default: printf("Opção inválida");			
+						default: printf("OpÃ§Ã£o invÃ¡lida");			
 					}	
-				} else printf("Nome não encontrado");	
+				} else printf("Nome nÃ£o encontrado");	
 			break;
 				
 			case 5: 
@@ -144,7 +145,7 @@ int main() {
 				return 0; 
 			break;
 				
-			default: printf("Opção inválida");	
+			default: printf("OpÃ§Ã£o invÃ¡lida");	
 		}	
 	}
 }
